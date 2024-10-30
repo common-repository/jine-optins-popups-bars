@@ -1,0 +1,36 @@
+
+<div ng-init="W.current.state = 'configure';" class="row">
+    <!--popup design-->
+    
+
+    <div>
+        <div class="yel-conf-heading">Smart settings for powerful widgets</div>
+        <div class="yel-conf-sub">Select a section to configure:</div>
+        <div class="yel-conf-accordian">
+            <accordion close-others="oneAtATime">
+                <accordion-group ng-repeat="(section, title) in sections">
+                    <accordion-heading>
+                        <span ng-class="{'yel-bold':isOpen[tag]}">{{title}}</span>
+                        <!-- <i ng-show="(now.editing==section)" class="pull-right glyphicon glyphicon-chevron-right"></i> -->
+                    </accordion-heading>
+                    <div>
+
+                        <formly-form model="R.widget.configuration" fields="configFields[section]"></formly-form>
+
+
+                    </div>
+                </accordion-group>
+                <accordion-group ng-show="W.isEmailPopup(R.widget)">
+                 <accordion-heading>
+                        <span ng-class="{'yel-bold':isOpen[tag]}">Email Provider Setup</span>
+                        <!-- <i ng-show="(now.editing==section)" class="pull-right glyphicon glyphicon-chevron-right"></i> -->
+                    </accordion-heading>
+                        <formly-form model="R.widget.components.emailSubscription.values" fields="emailFields"></formly-form>
+
+                    <div email-connector provider="{{R.widget.components.emailSubscription.values.provider}}" email-config="R.widget.components.emailSubscription.values" email-fields="emailFields"></div></accordion-group>
+            </accordion>
+        </div>
+        <div class="yel-conf-addons" id="yel-conf-addons"
+        ng-click='viewAddonsClick()'>View Premium Addons</div>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+.yel-signup-wrapper {
+    padding: 30px;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+.yel-sup-subheading
+{
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+.yel-signup-form-wrapper {
+    margin-top: 10px;
+}
+
+.yel-signup-form-wrapper input {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 200px;
+}
+
+.yel-signup-form-wrapper input[type="email"],
+.yel-signup-form-wrapper input[type="password"] {
+    width: 405px;
+}
+
+.yel-signup-form-wrapper .yel-button-green {
+    margin-top: 20px;
+    border: none;
+}
+
+.yel-button-green a:hover{
+	color: white !important;
+}
+.yel-pay-button {
+	padding: 0px 10px;
+}
+
+.yel-signup-form-wrapper .yel-error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.yel-payment-popup-wrapper {
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.yel-payment-popup-wrapper .yel-sup-subheading {
+    margin-bottom: 20px
+}
+
+.yel-payment-type-block {
+    display: inline-block;
+    width: 40%;
+}
+
+.yel-payment-type-block input[type="radio"] {
+    margin-bottom: 7px;
+}
+
+.yel-monthly-div,
+.yel-annual-div {
+    display: inline-block;
+    width: 40%;
+}
+
+.yel-admin-wrapper-prem {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #E7E7E7;
+    padding-top: 40px;
+}
+
+.yel-admin-wrapper-prem .yel-sup-subheading {
+    margin-bottom: 20px;
+}
+
+.yel-prem-table {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.yel-prem-table tr {
+    height: 30px;
+}
+
+.yel-prem-table .yel-center {
+    text-align: center;
+}
+
+.yel-prem-table th {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+}
+
+.yel-prem-table td {
+    width: 30%;
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.yel-featuer-desc-wrapper {
+    padding: 30px;
+}
